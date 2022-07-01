@@ -1,10 +1,16 @@
-function validate() {
-    var email=document.getElementById("email").value;
-    var wachtwoord=document.getElementById("wachtwoord").value;
-    if(email=='admin' && wachtwoord=='admin') {
-        alert("Ingelogd");
-        return false;
-    } else {
-        alert("Fout")
-    }
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.querySelector('#login');
+    const signinForm = document.querySelector('#signin');
+
+    document.querySelector("#linkCreateAccount").addEventListener("click", e => {
+        e.preventDefault();
+        loginForm.classList.add("formHidden");
+        signinForm.classList.remove("formHidden");
+    });
+
+    document.querySelector('#linkLogin').addEventListener("click", e => {
+        e.preventDefault();
+        loginForm.classList.remove("formHidden");
+        signinForm.classList.add("formHidden");
+    });
+});

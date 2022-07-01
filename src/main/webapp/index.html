@@ -7,22 +7,42 @@
 </head>
 <body>
 <div class="center">
-    <h1>Login</h1>
-    <form method="post">
+    <form method="post" id="login" class="form" name="login">
+        <h1>Login</h1>
         <div class="txt_field">
-            <input id="email" type="text" required>
+            <input id="email" type="text" name="emailLogIn" required>
             <span></span>
             <label>Email</label>
         </div>
         <div class="txt_field">
-            <input id="wachtwoord" type="text" required>
+            <input id="wachtwoord" type="text" name="wachtwoordLogIn" required>
             <span></span>
             <label>Wachtwoord</label>
         </div>
-        <input type="submit" value="Login" onclick="validate()">
-        <a href="http://127.0.0.1:5500/Account/Account.html">
+        <input type="submit" value="Login">
+        <a id="linkCreateAccount" class="formLink">
             <button type="button" id="account">Account Aanmaken</button>
         </a>
+    </form>
+
+    <form method="post" id="signin" class="form formHidden" name="signin">
+        <h1>Account Aanmaken</h1>
+        <div class="txt_field">
+            <input type="text" name="emailSignIn" required>
+            <span></span>
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" name="wachtwoordSignIn" required>
+            <span></span>
+            <label>Wachtwoord</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" name="gebruikersnaamSignIn" required>
+            <span></span>
+            <label>Gebruikersnaam</label>
+        </div>
+        <input type="submit" value="Aanmaken">
     </form>
 </div>
 </body>
