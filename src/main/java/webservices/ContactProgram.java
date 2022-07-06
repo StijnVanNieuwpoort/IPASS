@@ -6,10 +6,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ContactProgram {
-    public void sql(String query) {
+    public static void sql(String query) {
         String jdbcURL = "jdbc:postgresql://localhost:5432/IPASS";
         String username = "postgres";
         String password = "ikikik29";
+
+        System.out.println("functie gestart");
+
+
 
         try {
             Connection connection = DriverManager.getConnection(jdbcURL, username, password);

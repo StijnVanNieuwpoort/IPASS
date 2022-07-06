@@ -1,4 +1,4 @@
-package main.java.domeinlaag;
+package domeinlaag;
 
 public class Ingrediënt {
     private String type;

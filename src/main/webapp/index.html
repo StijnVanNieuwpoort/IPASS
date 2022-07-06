@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Inloggen</title>
     <link rel="stylesheet" href="Inloggen.css">
@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="center">
-    <form method="post" id="login" class="form" name="login">
+    <form method="post" id="loginForm" class="form" name="login">
         <h1>Login</h1>
         <div class="txt_field">
             <input id="email" type="text" name="emailLogIn" required>
@@ -19,30 +19,30 @@
             <span></span>
             <label>Wachtwoord</label>
         </div>
-        <input type="submit" value="Login">
+        <button type="submit">Login</button>
         <a id="linkCreateAccount" class="formLink">
             <button type="button" id="account">Account Aanmaken</button>
         </a>
     </form>
 
-    <form method="post" id="signin" class="form formHidden" name="signin">
+    <form id="signinForm" class="form formHidden">
         <h1>Account Aanmaken</h1>
         <div class="txt_field">
-            <input type="text" name="emailSignIn" required>
+            <input type="text" name="emailSignin" required>
             <span></span>
             <label>Email</label>
         </div>
         <div class="txt_field">
-            <input type="text" name="wachtwoordSignIn" required>
+            <input type="text" name="wachtwoordSignin" required>
             <span></span>
             <label>Wachtwoord</label>
         </div>
         <div class="txt_field">
-            <input type="text" name="gebruikersnaamSignIn" required>
+            <input type="text" name="gebruikersnaamSignin" required>
             <span></span>
             <label>Gebruikersnaam</label>
         </div>
-        <input type="submit" value="Aanmaken">
+        <button class="formButton" type="submit" id="signinButton">Aanmaken</button>
     </form>
 </div>
 </body>

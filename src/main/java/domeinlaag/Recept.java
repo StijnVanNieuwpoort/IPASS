@@ -1,4 +1,4 @@
-package main.java.domeinlaag;
+package domeinlaag;
 
 import java.util.ArrayList;
 
